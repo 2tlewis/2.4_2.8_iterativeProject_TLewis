@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawa College EOTC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Tawa College EOTC</h1>
+        </header>
+
+        <nav class="nav-bar">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Community Service</a>
+            <a href="#" class="nav-item">Outdoor Activities</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-row">
+                <div class="left-column">
+                    <div class="content-block">
+                        Each student will be given a timetable informing them of which trip they will do on which day. Click on the following links to see your Timetable for the Week.<br><br>
+                        Group 1, Group 2, Group 3, Group 4
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="content-block">
+                        As part of the Year 10 programme students will be participating in four days of Education Outside the Classroom (EOTC). The focus of this programme is one of citizenship and social awareness.
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="left-column">
+                    <div class="content-block">
+                        These trips will run from Tuesday 3 December to Friday 6 December. All of these trips will depart from Tawa College at 8:35am and will return by 3:20pm. The total cost of the trips is $75.00 per student. This includes transport and the cost of all activities. Due to the nature of the activities and the fixed costs involve, there will be no refunds given. Students are expected to bring a packed lunch on all of these days as they will not have any opportunities to purchase lunch.
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="content-block">
+                        The four days of activities in which your son/daughter will participate are as follows: Community Service, Rangitoto Walk, Adrenaline Forest/Te Rauparaha Arena Aquatic Centre and Wainuiomata Camp.
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="content-row">
+                <div class="left-column">
+                    <div class="content-block">
+                        Students will be required to wear appropriate mufti clothing on all days. This involves good walking/sports shoes, rain coat, sun block, and suitably warm clothing.
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="content-block">
+                        Students will not be allowed to participate in these trips if they do not have the correct gear. If you have any difficulty supplying these required items please indicate on the return form and we will endeavour to assist where possible. On all trips students will be expected to abide by the school rules. This includes absolutely no cigarettes, drugs or alcohol. Students will be expected to conduct themselves in a manner that is respectful to both the supervising teachers and other students. Anyone who does not comply with these requirements will be sent back to school and/or home at the expense of their parents/caregivers.
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="left-column">
+                    <div class="content-block">
+                        It is essential that all students on the trip play their part in risk management. Their personal safety is very much their responsibility and they must always act in a manner that does not endanger either themselves or others. It is important that they follow the instructions of staff at all times.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                All these activities are compulsory but have been designed to be both education and fun. Students will be supervised at all times by Tawa College staff. If you have not already returned the permission forms given out earlier this term then please collect another copy of need to pay the $75.00 before Friday 25 October.
+            </div>
+            
+            <div class="footer-buttons">
+                <button class="footer-button">Click to read more!</button>
+                <button class="footer-button">Back to Top</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

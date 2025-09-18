@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(../images/IMG_9675.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Overlay to darken background for better text readability */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header with school crests */
+.header {
+    background: linear-gradient(135deg, #2a1b5c, #1a0f3d);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+	opacity: 0.9;
+}
+
+.header::before,
+.header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    background: url(../images/Tawa-Logo.png) no-repeat center;
+	background-size: contain;
+}
+
+.header::before {
+    left: 20px;
+}
+
+.header::after {
+    right: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+}
+
+/* Navigation bar */
+.nav-bar {
+    background: rgba(42, 27, 92, 0.95);
+    border-radius: 25px;
+    padding: 15px;
+    margin: 0 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    backdrop-filter: blur(10px);
+	opacity: 0.9;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Main content area */
+.main-content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+	opacity: 0.9;
+}
+
+.content-row {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-block {
+    background: rgba(42, 27, 92, 0.9);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.content-block p {
+    margin-bottom: 15px;
+}
+
+.content-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Image placeholders for outdoor activity photos */
+.content-block.with-image {
+    position: relative;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.content-block.with-image p {
+    background: rgba(42, 27, 92, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* Separator */
+.separator {
+    height: 20px;
+    background: rgba(42, 27, 92, 0.8);
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 0 20px 40px 20px;
+}
+
+.footer-content {
+    background: rgba(42, 27, 92, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer-button {
+    background: rgba(42, 27, 92, 0.9);
+    color: white;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.footer-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        margin: 0 10px 20px 10px;
+    }
+    
+    .nav-item {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    .content-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .main-content {
+        padding: 0 10px;
+    }
+    
+    .footer-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .footer {
+        padding: 0 10px 30px 10px;
+    }
+    
+    .header::before,
+    .header::after {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .header::before {
+        left: 10px;
+    }
+    
+    .header::after {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+    
+    .content-block {
+        padding: 20px;
+        font-size: 14px;
+    }
+    
+    .footer-content {
+        padding: 25px;
+        font-size: 14px;
+    }
+    
+    .header::before,
+    .header::after {
+        display: none;
+    }
+}
+
